@@ -2,10 +2,10 @@
 
 Turn on/off terminal autoscroll when scrolling up/down
 
-Turns autoscroll off when scrolling up (rename button to "Now") 
-Turns autoscroll on when "Now" is pressed or scrolled to the end
+- turns autoscroll off when scrolling up (rename button to "Now") 
+- turns autoscroll on when "Now" is pressed or scrolled to the end
 
-This simulates "Console" application, the OSX log viewer.
+Behaviour similar to "Console" application, the OSX log viewer.
 
 ## Setup
 
