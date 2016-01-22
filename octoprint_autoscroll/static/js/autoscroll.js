@@ -24,7 +24,7 @@ $(function() {
 
 			self.container = $("#terminal-output");
 			
-			//change function of "Scrool to end" to "Clear"
+			//change function of "Scroll to end" to "Clear"
 			var ee = $(".terminal .pull-right a").first();
 			ee.unbind();
 			ee.text("Clear");

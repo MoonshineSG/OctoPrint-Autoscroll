@@ -7,6 +7,8 @@ Turn on/off terminal autoscroll when scrolling up/down
 
 Behaviour similar to "Console" application, the OSX log viewer.
 
+The function "Scroll to end" becomes "Clear"
+
 ## Setup
 
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
