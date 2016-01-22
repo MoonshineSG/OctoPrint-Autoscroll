@@ -24,6 +24,15 @@ $(function() {
 
 			self.container = $("#terminal-output");
 			
+			//change function of "Scrool to end" to "Clear"
+			var ee = $(".terminal .pull-right a").first();
+			ee.unbind();
+			ee.text("Clear");
+			ee.on("click", function() {
+				self.terminal.log([]);
+				self.terminal.scrollToEnd();
+				return false;
+			});
 			$("#terminal-output").on("scroll", self.scrollhandle);
 		}
 			
