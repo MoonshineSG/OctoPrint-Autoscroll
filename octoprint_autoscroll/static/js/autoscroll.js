@@ -14,13 +14,14 @@ $(function() {
 				}
 			});
 			
-			//overwrite the method to set program tag
-			self.terminal.scrollToEnd = function() {
-				self.program = true;
-				if (self.container.length) {
-					self.container.scrollTop(self.container[0].scrollHeight);
+			//wrap the scrollToEnd to set program tag
+			self.terminal.scrollToEnd = (function() {
+				var _scrollToEnd = self.terminal.scrollToEnd;
+				return function() {
+					self.program = true;
+					_scrollToEnd();
 				}
-			}
+			})();
 
 			self.container = $("#terminal-output");
 			
