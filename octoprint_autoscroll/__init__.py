@@ -30,6 +30,7 @@ class AutoscrollPlugin(octoprint.plugin.AssetPlugin):
 		)
 
 __plugin_name__ = "Autoscroll"
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 
 def __plugin_load__():
